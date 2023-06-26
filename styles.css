@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/*font-family: 'IM Fell Double Pica', serif;*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /*fonts*/
+  --accent-font: 'IM Fell Double Pica', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+.centered {
+  text-align: center;
+}
+
+.home__location {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: absolute;
+}
+
+.main-header {
+  width: 100%;
+  height: 4rem;
+  background-color: #9646A6;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+.main-header__nav {
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+  color: #ffd52d;
+}
+
+.banner {
+  background-color: #F5F5F5;
+  margin-top: 4rem;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 2rem 1rem 0 1rem;
+  color: #9646A6;
+  font-size: 6rem;
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+.banner__img {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    max-width: 90%;
+    max-height: 80vh;
+    border: #9646A6 solid 1rem;
+    border-radius: 2%;
+}
+
+.banner__description {
+  padding: 0 2rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.banner__description-title {
+  font-size: 4rem;
+  font-family: 'Indie Flower', cursive;
+}
+
+.banner__description p {
+  margin: 0;
+  font-size: 1.5rem;
+  max-width: 55rem;
+}
+
+.mobile-nav {
+  width: 30rem;
+  height: 100vh;
+  max-width: 90%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #a82dff;
+  z-index: 10;
+  padding: 2rem 1rem 1rem 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+.mobile-nav__item-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav__item {
+  margin: 1rem;
+  padding: 0;
+  background-color: #a82dff;
+}
+
+.mobile-nav__item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.mobile-nav__item a:active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a.active {
+  background: #a82dff;
+  color: white;
+  border-radius: 3px;
+}
+
+#side-menu-toggle {
+  border: 1px solid white;
+  font: inherit;
+  padding: 0.5rem;
+  display: block;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+#side-menu-toggle:focus {
+  outline: none;
+}
+
+#side-menu-toggle:active,
+#side-menu-toggle:hover {
+  color: #ffeb3b;
+  border-color: #ffeb3b;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: none;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.gallery__container {
+  background-color: #D8BADE;
+}
+
+.gallery__container-title {
+  margin: 0;
+  padding: 4rem 0 0 0;
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.gallery-item__list {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.gallery-item {
+  background-color: #F5F5F5;
+  padding: 2rem;
+  list-style-type: none;
+  margin: 4rem 1rem;
+  border: solid 0.25rem #F5F5F5;
+  border-radius: 0.5rem;
+}
+
+.gallery-item h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gallery-item img {
+  max-width: 40rem;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.calendar__container {
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 4rem;
+}
+
+.calendar__list {
+  padding: 1rem;
+  margin: 0;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.calendar__container-title {
+  margin: 0;
+  padding: 4rem 0 0 0;
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.calendar__list-item {
+  list-style-type: none;
+  min-width: 45rem;
+  border: 3px solid #a82dff;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+.calender__list-item h2 {
+  margin: 0 0 0 0 !important;
+  font-size: 1.5rem;
+}
+
+.calendar__event-link {
+  background-color: #a82dff;
+  min-width: 20rem;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.calendar__event-link:hover {
+  background-color: #D8AAF8;
+  color: #D8AAF8 !important;
+}
+
+.calendar__list-item a {
+  text-decoration: none;
+}
+
+.footer {
+  height: 10rem;
+  background-color: #a82dff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.footer__contact {
+  margin: 1rem 0;
+  width: 100%;
+  height: 4rem;
+}
+
+.footer__contact h3 {
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+ 
+.footer a:link, 
+  a:visited, 
+  a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+   color: #ffd52d
+}
+
+
+@media only screen and (min-width: 768px) {
+  .main-header__nav {
+    display: flex;
+  }
+
+  #side-menu-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-header__nav {
+    display: none;
+  }
+  
+  #side-menu-toggle {
+    display: block;
+  }
+  
+}
