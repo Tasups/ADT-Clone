@@ -8,7 +8,12 @@
 
 :root {
   /*fonts*/
-  --accent-font: 'IM Fell Double Pica', serif;
+  --main-font: 'IM Fell Double Pica', serif;
+  --accent-font: 'Poppins', sans-serif;
+  --tertiary-font: 'Play', sans-serif;
+
+  /* colors */
+  --main-color: #9646A6;
 }
 
 html {
@@ -18,9 +23,9 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Play', sans-serif;
+  /* font-family: 'Play', sans-serif;
   font-family: 'Poppins', sans-serif;
-  font-family: 'IM Fell Double Pica', serif;
+  font-family: 'IM Fell Double Pica', serif; */
 }
 
 .centered {
@@ -83,10 +88,16 @@ body {
 
 .banner__title {
   margin: 0;
-  padding: 2rem 1rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
   color: #9646A6;
   font-size: 6rem;
-  font-family: 'IM Fell Double Pica', serif;
+  font-family: var(--main-font);
+}
+
+.banner__title-under {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  margin-top: 0;
 }
 
 .banner__img {
@@ -206,14 +217,28 @@ body {
 
 .gallery__container {
   background-color: #D8BADE;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__container-info {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .gallery__container-title {
   margin: 0;
-  padding: 4rem 0 0 0;
+  width: 30rem;
+  background-color: white;
+  padding: 2rem 0 0 0;
   font-size: 5rem;
+  color: var(--main-color);
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  font-family: var(--main-font);
 }
 
 .gallery-item__list {
@@ -313,7 +338,7 @@ body {
 
 .footer {
   height: 10rem;
-  background-color: #a82dff;
+  background-color: var(--main-color);
   width: 100%;
   display: flex;
   flex-direction: column;
