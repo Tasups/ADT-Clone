@@ -97,6 +97,14 @@ body {
   font-family: var(--font-main);
 }
 
+.banner__title-staff {
+  margin: 0;
+  padding: 3rem;
+  color: var(--color-main);
+  font-size: 6rem;
+  font-family: var(--font-main);
+}
+
 .banner__title-under {
   font-family: var(--font-main);
   color: var(--color-main);
@@ -340,7 +348,7 @@ body {
 
 .footer__contact h3 {
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
  
 .footer a:link, 
