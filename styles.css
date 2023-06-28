@@ -332,6 +332,66 @@ body {
   border-radius: 5px;
 }
 
+/*STAFF PAGE*/
+
+.staff__container {
+  /*background-color: var(--color-background-accent);*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*align-content: center;*/
+  /*padding-bottom: 4rem;*/
+  background-color: var(--color-tertiary);
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff__card {
+  display: flex;
+  width: 60rem;
+  color: var(--color-main);
+  margin: 2rem;
+  padding: 0;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*align-content: center;*/
+  border: solid 8px var(--color-main);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.staff__card-img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.staff__card-info {
+  padding: 1rem;
+}
+
+.staff__card-info h2 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.staff__card-info h3 {
+  font-size: 1rem;
+}
+
+.staff__card-info p {
+  color: black;
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 130%;
+  font-family: var(--font-main);
+}
+
 .footer {
   background-color: var(--color-main);
   width: 100%;
