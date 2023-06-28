@@ -8,12 +8,17 @@
 
 :root {
   /*fonts*/
-  --main-font: 'IM Fell Double Pica', serif;
-  --accent-font: 'Poppins', sans-serif;
-  --tertiary-font: 'Play', sans-serif;
+  
+  --font-main: 'IM Fell Double Pica', serif;
+  --font-accent: 'Poppins', sans-serif;
+  --font-tertiary: 'Play', sans-serif;
 
   /* colors */
-  --main-color: #9646A6;
+  --color-main: #9646A6;
+  --color-accent: #C0C0C0;
+  --color-tertiary: #D8BADE;
+  --color-quadrary: #8BA4A9;
+  --color-background-accent: #F5F5F5;
 }
 
 html {
@@ -23,9 +28,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  /* font-family: 'Play', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'IM Fell Double Pica', serif; */
+  font-family: 'IM Fell Double Pica', serif;
 }
 
 .centered {
@@ -42,7 +45,7 @@ body {
 .main-header {
   width: 100%;
   height: 4rem;
-  background-color: #9646A6;
+  background-color: var(--color-main);
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
@@ -78,26 +81,35 @@ body {
 .main-header__item a:hover,
 .main-header__item a:active,
 .main-header__item a.active {
-  color: #ffd52d;
+  color: var(--color-quadrary);
 }
 
 .banner {
-  background-color: #F5F5F5;
+  background-color: var(--color-background-accent);
   margin-top: 4rem;
 }
 
 .banner__title {
   margin: 0;
   padding: 1rem 1rem 0 1rem;
-  color: #9646A6;
+  color: var(--color-main);
   font-size: 6rem;
-  font-family: var(--main-font);
+  font-family: var(--font-main);
+}
+
+.banner__title-staff {
+  margin: 0;
+  padding: 3rem;
+  color: var(--color-main);
+  font-size: 6rem;
+  font-family: var(--font-main);
 }
 
 .banner__title-under {
-  font-family: var(--main-font);
-  color: var(--main-color);
+  font-family: var(--font-main);
+  color: var(--color-main);
   margin-top: 0;
+  font-size: 3rem;
 }
 
 .banner__img {
@@ -106,7 +118,7 @@ body {
     margin-top: 2rem;
     max-width: 90%;
     max-height: 80vh;
-    border: #9646A6 solid 1rem;
+    border: var(--color-main) solid 1rem;
     border-radius: 2%;
 }
 
@@ -215,14 +227,41 @@ body {
   align-items: stretch;
 }
 
-.gallery__container {
-  background-color: #D8BADE;
+.news__container {
+  background-color: var(--color-tertiary);
   min-height: 20rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.gallery__container-info {
+.news__card {
+  width: 55rem;
+  color: var(--color-main);
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 8px var(--color-main);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.news__card h2 {
+  font-size: 2rem;
+}
+
+.news__card p {
+  margin: 0.25rem;
+  font-size: 1.75rem;
+}
+
+.news__container-info {
   padding: 0;
   margin: 0;
   display: flex;
@@ -230,10 +269,9 @@ body {
   flex-direction: column;
 }
 
-.gallery__container-title {
+.news__container-title {
   margin: 0;
   width: 30rem;
-  background-color: white;
   padding: 2rem 0 0 0;
   font-size: 5rem;
   color: var(--main-color);
@@ -241,7 +279,7 @@ body {
   font-family: var(--main-font);
 }
 
-.gallery-item__list {
+.news-item__list {
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
@@ -251,7 +289,7 @@ body {
   align-content: center;
 }
 
-.gallery-item {
+.news-item {
   background-color: #F5F5F5;
   padding: 2rem;
   list-style-type: none;
@@ -260,19 +298,13 @@ body {
   border-radius: 0.5rem;
 }
 
-.gallery-item h2 {
+.news-item h2 {
   text-align: center;
   font-size: 2rem;
 }
 
-.gallery-item img {
-  max-width: 40rem;
-  border: 3px solid white;
-  border-radius: 10px;
-}
-
-.calendar__container {
-  background-color: #F5F5F5;
+.carousel__container {
+  background-color: var(--color-background-accent);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -281,64 +313,74 @@ body {
   padding-bottom: 4rem;
 }
 
-.calendar__list {
-  padding: 1rem;
-  margin: 0;
-  max-width: 40rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.calendar__container-title {
-  margin: 0;
-  padding: 4rem 0 0 0;
-  font-size: 5rem;
+.carousel__quote {
+  padding: 2rem 0;
+  max-width: 55rem;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  font-size: 1.75rem;
 }
 
-.calendar__list-item {
-  list-style-type: none;
-  min-width: 45rem;
-  border: 3px solid #a82dff;
-  border-radius: 3px;
+.carousel__image img {
+  width: 55rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/*STAFF PAGE*/
+
+.staff__container {
+  background-color: var(--color-tertiary);
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.staff__card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 0 1rem;
-  margin: 1rem;
+  max-width: 35rem;
+  min-height: 70rem;
+  color: var(--color-main);
+  margin: 2rem;
+  padding: 0;
+  border: solid 8px var(--color-main);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.calender__list-item h2 {
-  margin: 0 0 0 0 !important;
-  font-size: 1.5rem;
+.staff__card-img {
+  margin: 0;
+  padding: 0;
+  max-height: 40rem;
+  max-width: 100%;
 }
 
-.calendar__event-link {
-  background-color: #a82dff;
-  min-width: 20rem;
-  border: none;
-  border-radius: 3px;
-  margin-bottom: 1rem;
+.staff__card-info {
+  padding: 1rem;
 }
 
-.calendar__event-link:hover {
-  background-color: #D8AAF8;
-  color: #D8AAF8 !important;
+.staff__card-info h2 {
+  font-size: 1.75rem;
+  margin-top: 0.75rem;
 }
 
-.calendar__list-item a {
-  text-decoration: none;
+.staff__card-info h3 {
+  font-size: 1.25rem;
+}
+
+.staff__card-info p {
+  color: black;
+  margin-top: 0.25rem;
+  text-align: left;
+  font-size: 1.25rem;
+  font-family: var(--font-main);
 }
 
 .footer {
-  height: 10rem;
-  background-color: var(--main-color);
+  background-color: var(--color-main);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -349,13 +391,11 @@ body {
 .footer__contact {
   margin: 1rem 0;
   width: 100%;
-  height: 4rem;
 }
 
 .footer__contact h3 {
   margin: 1rem;
-  font-size: 2rem;
-  font-family: sans-serif;
+  font-size: 1.5rem;
 }
  
 .footer a:link, 
@@ -367,6 +407,10 @@ body {
 
 .footer a:hover {
    color: #ffd52d
+}
+
+.footer__publisher {
+  padding-bottom: 1rem;
 }
 
 
