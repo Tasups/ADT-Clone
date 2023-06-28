@@ -303,12 +303,6 @@ body {
   font-size: 2rem;
 }
 
-.gallery-item img {
-  max-width: 40rem;
-  border: 3px solid white;
-  border-radius: 10px;
-}
-
 .carousel__container {
   background-color: var(--color-background-accent);
   display: flex;
@@ -335,30 +329,22 @@ body {
 /*STAFF PAGE*/
 
 .staff__container {
-  /*background-color: var(--color-background-accent);*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  /*align-content: center;*/
-  /*padding-bottom: 4rem;*/
   background-color: var(--color-tertiary);
   min-height: 20rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .staff__card {
   display: flex;
-  width: 60rem;
+  flex-direction: column;
+  max-width: 35rem;
+  min-height: 70rem;
   color: var(--color-main);
   margin: 2rem;
   padding: 0;
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  /*align-content: center;*/
   border: solid 8px var(--color-main);
   background-color: white;
   border-radius: 5px;
@@ -368,6 +354,7 @@ body {
 .staff__card-img {
   margin: 0;
   padding: 0;
+  max-height: 40rem;
   max-width: 100%;
 }
 
@@ -376,19 +363,19 @@ body {
 }
 
 .staff__card-info h2 {
-  font-size: 1.25rem;
-  margin-top: 1rem;
+  font-size: 1.75rem;
+  margin-top: 0.75rem;
 }
 
 .staff__card-info h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .staff__card-info p {
   color: black;
+  margin-top: 0.25rem;
   text-align: left;
   font-size: 1.25rem;
-  line-height: 130%;
   font-family: var(--font-main);
 }
 
