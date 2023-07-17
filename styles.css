@@ -44,9 +44,9 @@ body {
 
 .main-header {
   width: 100%;
-  height: 4rem;
+  min-height: 6rem;
   background-color: var(--color-main);
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@ body {
 .main-header__item {
   margin: 0 1rem;
   padding: 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .main-header__item a {
@@ -86,20 +86,20 @@ body {
 
 .banner {
   background-color: var(--color-background-accent);
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .banner__title {
+  padding: 4rem 1rem;
   margin: 0;
-  padding: 1rem 1rem 0 1rem;
   color: var(--color-main);
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: var(--font-main);
 }
 
-.banner__title-staff {
-  margin: 0;
-  padding: 3rem;
+.banner__title-index {
+  margin: 1rem 0;
+  padding: 1rem 1rem 0 1rem;
   color: var(--color-main);
   font-size: 6rem;
   font-family: var(--font-main);
@@ -143,13 +143,13 @@ body {
 }
 
 .mobile-nav {
-  width: 30rem;
+  width: 45rem;
   height: 100vh;
   max-width: 90%;
   position: fixed;
   left: 0;
   top: 0;
-  background: #a82dff;
+  background: var(--color-main);
   z-index: 10;
   padding: 2rem 1rem 1rem 2rem;
   transform: translateX(-100%);
@@ -169,15 +169,15 @@ body {
 }
 
 .mobile-nav__item {
-  margin: 1rem;
+  margin: 2rem;
   padding: 0;
-  background-color: #a82dff;
+  background-color: var(--color-main);
 }
 
 .mobile-nav__item a {
   text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
+  color: white;
+  font-size: 54px;
   padding: 0.5rem 2rem;
 }
 
@@ -190,8 +190,10 @@ body {
 }
 
 #side-menu-toggle {
+  min-height: 70px;
   border: 1px solid white;
   font: inherit;
+  font-size: 40px;
   padding: 0.5rem;
   display: block;
   background: transparent;
@@ -379,6 +381,76 @@ body {
   font-family: var(--font-main);
 }
 
+/* CLASS PAGE */
+
+.class__container {
+  background-color: var(--color-tertiary);
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.class__card {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-main);
+  margin: 2rem;
+  padding: 0;
+  border: solid 8px var(--color-main);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 60%;
+}
+
+.class__card-img {
+  margin: 0;
+  padding: 0;
+
+}
+
+.class__card-info {
+  padding: 1rem;
+}
+
+.class__card-info h2 {
+  font-size: 3rem;
+  margin-top: 0.75rem;
+}
+
+.class__card-info h3 {
+  font-size: 2rem;
+}
+
+.class__table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.class__table h3 {
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.class__table-header {
+  background-color: var(--color-main);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class__table-data {
+  border: 3px solid var(--color-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
   background-color: var(--color-main);
   width: 100%;
@@ -395,7 +467,7 @@ body {
 
 .footer__contact h3 {
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
  
 .footer a:link, 
@@ -414,7 +486,7 @@ body {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1100px) {
   .main-header__nav {
     display: flex;
   }
@@ -424,7 +496,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1099px) {
+  .banner__title {
+    font-size: 6rem;
+  }
+  
   .main-header__nav {
     display: none;
   }
@@ -433,4 +509,32 @@ body {
     display: block;
   }
   
+  .staff__card {
+    max-width: 90%;
+  }
+  
+  .staff__card-img {
+    max-height: 100%;
+  }
+  
+  .class__card {
+    max-width: 90%;
+  }
+  
+  .class__table h3 {
+    font-size: 3rem;
+  }
+  
+  .class__card-info h2 {
+    font-size: 4rem;
+  }
+  
+  .class__card-info h3 {
+    font-size: 3rem;
+  }
+  
+  .footer__contact h3 {
+    font-size: 3rem;
+  }
+
 }
