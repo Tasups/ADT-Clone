@@ -13,11 +13,11 @@
   --font-accent: 'Poppins', sans-serif;
   --font-tertiary: 'Play', sans-serif;
 
-  /* colors */
+  /* colors #8BA4A9 */
   --color-main: #9646A6;
   --color-accent: #C0C0C0;
   --color-tertiary: #D8BADE;
-  --color-quadrary: #8BA4A9;
+  --color-quadrary:  #8BA4A9;
   --color-background-accent: #F5F5F5;
 }
 
@@ -184,8 +184,8 @@ body {
 .mobile-nav__item a:active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a.active {
-  background: #a82dff;
-  color: white;
+  background: var(--color-main);
+  color: var(--color-quadrary);
   border-radius: 3px;
 }
 
@@ -323,7 +323,7 @@ body {
 }
 
 .carousel__image img {
-  width: 55rem;
+  width: 30rem;
   border: none;
   border-radius: 5px;
 }
@@ -402,7 +402,7 @@ body {
   background-color: white;
   border-radius: 5px;
   text-align: center;
-  max-width: 60%;
+  max-width: 50%;
 }
 
 .class__card-img {
@@ -424,13 +424,25 @@ body {
   font-size: 2rem;
 }
 
-.class__table {
+.table-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
-.class__table h3 {
+.table-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.table-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.table-1 h3, .table-2 h3, .table-3 h3 {
   margin: 0;
   padding: 1rem;
   font-size: 2rem;
@@ -503,6 +515,10 @@ body {
   
   .main-header__nav {
     display: none;
+  }
+  
+  .carousel__image img {
+    width: 50rem;
   }
   
   #side-menu-toggle {
