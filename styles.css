@@ -31,6 +31,10 @@ body {
   font-family: 'IM Fell Double Pica', serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .centered {
   text-align: center;
 }
@@ -420,19 +424,18 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--color-main);
-  margin: 2rem;
+  margin: 2rem 1.5rem;
   padding: 0;
   border: solid 8px var(--color-main);
   background-color: white;
   border-radius: 5px;
   text-align: center;
-  max-width: 50%;
+  max-width: 25%;
 }
 
 .class__card-img {
   margin: 0;
   padding: 0;
-
 }
 
 .class__card-info {
@@ -440,12 +443,55 @@ body {
 }
 
 .class__card-info h2 {
-  font-size: 3rem;
-  margin-top: 0.75rem;
+  font-size: 2rem;
+  margin: 0.25rem;
 }
 
 .class__card-info h3 {
   font-size: 2rem;
+}
+
+.adult-classes__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adult-classes__header {
+  font-size: 2rem;
+  color: var(--color-main);
+  border: 3px solid var(--color-main);
+  background: white;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.adult-classes__content {
+  display: flex;
+}
+
+.single-class__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
+  max-width: 90%;
+}
+
+.single-class__info {
+  margin: 2rem;
+  color: var(--color-main);
+}
+
+.single-class__info h2 {
+  font-size: 2rem;
+}
+
+.single-class__info h3 {
+  font-size: 1.5rem;
 }
 
 #add-fee__container {
@@ -454,7 +500,14 @@ body {
 
 .table__card {
   display: flex;
-  flex-direction: row;
+  color: var(--color-main);
+  margin: 2rem;
+  padding: 0;
+  border: solid 8px var(--color-main);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 50%;
 }
 
 .table-tuition {
@@ -505,8 +558,8 @@ body {
 }
  
 .footer a:link, 
-  a:visited, 
-  a:active {
+  .footer a:visited, 
+  .footer a:active {
   text-decoration: none;
   color: white;
 }
