@@ -205,7 +205,7 @@ a {
 .mobile-nav__item a {
   text-decoration: none;
   color: white;
-  font-size: 32px;
+  font-size: 3rem;
   padding: 0.5rem 2rem;
 }
 
@@ -536,6 +536,25 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.poly__card {
+  width: 55rem;
+  color: var(--color-main);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 8px var(--color-main);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.poly__card-img {
+  width: 100%;
 }
 
 .footer {
