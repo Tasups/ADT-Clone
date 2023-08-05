@@ -467,9 +467,9 @@ a {
   padding: 0 2rem;
 }
 
-.adult-classes__content {
-  display: flex;
-}
+/*.adult-classes__content {*/
+/*  display: flex;*/
+/*}*/
 
 .single-class__container {
   display: flex;
@@ -622,6 +622,10 @@ a {
   
   .class__card-info h3 {
     font-size: 3rem;
+  }
+  
+  .single-class__container {
+    flex-direction: column;
   }
   
   .footer__contact h3 {
