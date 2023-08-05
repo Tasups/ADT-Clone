@@ -494,6 +494,23 @@ a {
   font-size: 1.5rem;
 }
 
+.fees-btn {
+  background: var(--color-main);
+  color: white;
+  font-size: 1.25rem;
+  font-family: var(--font-main);
+  padding: 1rem;
+  border: 3px solid var(--color-main);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.fees-btn:hover {
+  background: white;
+  color: var(--color-main);
+  font-weight: bold;
+}
+
 #add-fee__container {
   border: 1 px solid black;
 }
