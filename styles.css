@@ -436,6 +436,7 @@ a {
 .class__card-img {
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 .class__card-info {
@@ -492,6 +493,10 @@ a {
 
 .single-class__info h3 {
   font-size: 1.5rem;
+}
+
+.single-class__img {
+  max-width: 40rem;
 }
 
 .fees-btn {
@@ -645,7 +650,7 @@ a {
   }
   
   .class__card {
-    max-width: 90%;
+    min-width: 90%;
   }
   
   .class__table h3 {
