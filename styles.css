@@ -282,6 +282,16 @@ a {
   text-align: center;
 }
 
+.news__card-link {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+.news__card-link:hover {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
 .news__card h2 {
   font-size: 2rem;
 }
@@ -496,7 +506,7 @@ a {
 }
 
 .single-class__img {
-  max-width: 40rem;
+  width: 40rem;
 }
 
 .fees-btn {
