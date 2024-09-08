@@ -1,0 +1,36 @@
+Can you add days and times to the class descriptions?
+Our schedule can be confusing so that's why I don't put it out there but I think if I can put the days and times with the class it will help.
+DONE - Also, we can take registration dates off of mainpage and just keep currently enrolling and put call or email.
+
+DONE - Creative Movement:
+3 year old Mondays 5:30-6 or Tuesday 4:15-4:45
+Preschool 1 (age 4) Tuesdays 4:45-5:30 or Wednesdays 4:30-5:15
+Preschool 2 (age 5) Mondays 6:00-6:45 or Tuesdays 5:30-6:15
+DONE - Ballet:
+age 6 Tuesdays 4:15-5:00
+ages 7-9 Wednesdays 5:15-6:00
+ages 10-13 Wednesdays 6:00-6:45
+ages 14-18 Wednesdays 6:00-7:00 (advanced level)
+DONE - Jazz:
+age 6 Tuesdays 5:00-5:30
+ages 7-9 Mondays 4:30-5:15
+ages 10-13 Thursdays 5:30-6:15
+ages 14-18 Wednesdays 7:30-8:30 (advanced level)
+DONE - Tap:
+age 6 Tuesdays 5:30-6:00
+ages 7-9 Mondays 5:15-6:00
+ages 10-13 Wednesdays 5:15-6:00
+ages 14-18 Mondays 4:30-5:15 (advanced level)
+DONE - Tumble: By placement only
+DONE - Hip Hop:
+ages 5-9 Tuesdays 6:15-6:45
+ages 10 and up Tuesdays 6:45-7:30
+DONE - Modern/Contemporary: (please change title on website to this)
+ages 7-11 Wednesdays 4:30-5:15
+ages 12 and up Mondays 7:00-8:00
+
+Add Adult Ballet to list (pic can just be an image of a ballet shoe)
+Stretch and Move Mondays 9:30am-10:30am
+Ballet Tuesdays 9:00am-10:15am
+Tap Tuesdays 7:00pm-7:45pm
+Zumba Thursdays 6:15pm-7:15pm
