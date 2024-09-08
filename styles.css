@@ -35,6 +35,17 @@ a {
   text-decoration: none;
 }
 
+.link a:link,
+.link a:visited,
+.link a:active {
+      text-decoration: none;
+      color: var(--color-main);
+}
+
+.link a:hover {
+  color: #ffd52d
+}
+
 .centered {
   text-align: center;
 }
